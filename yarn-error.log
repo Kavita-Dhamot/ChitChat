@@ -1,0 +1,34 @@
+Arguments: 
+  /Users/divyatez.sisodiya/.nvm/versions/node/v16.20.0/bin/node /Users/divyatez.sisodiya/.yarn/releases/yarn-1.22.19.cjs install
+
+PATH: 
+  /Users/divyatez.sisodiya/.nvm/versions/node/v16.20.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/divyatez.sisodiya/.nvm/versions/node/v16.20.0/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/opt/homebrew/bin:/opt/homebrew/sbin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.20.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://prod-nexus.sprinklr.com/nexus/repository/npm/socket.io: ETIMEDOUT
+      at Timeout._onTimeout (/Users/divyatez.sisodiya/.yarn/releases/yarn-1.22.19.cjs:135957:19)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+
+npm manifest: 
+  {
+    "dependencies": {
+      "socket.io": "^4.5.1",
+      "socket.io-client": "^4.5.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

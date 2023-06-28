@@ -1,0 +1,317 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 4px;
+  font-family: "Segoe UI";
+}
+.heading {
+  width: 100%;
+  background-color: #303030;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+h1 {
+  font-family: sans-serif;
+  font-style: italic;
+  color: #b8b8b8;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 20px;
+}
+
+.connect-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 100%;
+}
+.video-container {
+  width: 90vw;
+  background-color: transparent;
+  row-gap: 20px;
+}
+
+.video-stream-container {
+  border-radius: 3%;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+
+
+
+.chat-container {
+  background-color: #181818;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  width: 90vw;
+  max-height: 80vh;
+  border-radius: 10px;
+}
+
+.all-chats {
+  width: 90%;
+  background-color: #181818;
+  padding: 5px;
+  max-height: 30vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.chats {
+  /* background-color: rgb(106, 166, 219); */
+  background-color: #080808;
+  padding: 10px;
+  margin-bottom: 0px;
+  border-radius: 5px;
+  color: #fafbfc;
+  max-width: 70%;
+  overflow-wrap: break-word;
+}
+
+.sender {
+  align-self: flex-start;
+}
+
+.me {
+  align-self: flex-end;
+}
+
+h2 {
+  background-color: white;
+}
+
+#send-button {
+  width: 200px;
+  background-color: aliceblue;
+}
+
+.icon {
+  border-width: 30ch;
+  padding: 20px;
+  border-radius: 50%;
+  height: 2em;
+  width: 2em;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  background-color: #fafbfc;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+    rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  color: #101113;
+  cursor: pointer;
+  font-family: "Segoe UI";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 6px 16px;
+}
+
+.icon-container {
+  border-radius: 50%;
+  border-color: #24292e;
+  background-color: #24292e;
+}
+
+.textBoxArea {
+  width: 90%;
+  height: 20vh;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  resize: none;
+}
+
+.chatBoxArea {
+  width: 90%;
+  height: 20vh;
+  background-color: #303030;
+  border-radius: 0px;
+  color: #fafbfc;
+}
+
+.maxWidth {
+  width: 100%;
+}
+/* #sample-video {
+  height: 20em;
+  border-radius: 10px;
+} */
+
+#end-button {
+  background-color: darkred;
+}
+
+h5 {
+  color: #fafbfc;
+  font-size: x-large;
+  font-style: oblique;
+  margin: 4px;
+}
+
+.media-control-btn {
+  position: relative;
+  background-color: #49b568;
+  border-radius: 100%;
+  font-size: 16px;
+  color: white;
+  padding: 0.8em 1.8em;
+  cursor: pointer;
+  text-align: center;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  height: 60px;
+  width: 30px;
+}
+
+.media-control-btn:hover {
+  transition-duration: 0.1s;
+  background-color: #49b568dc;
+}
+
+.media-control-btn:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 40px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 5px 20px rgba(255, 255, 255, 0.326);
+}
+
+.media-control-btn:active:after {
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.384);
+  position: absolute;
+  border-radius: 40px;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.media-control-btn:active {
+  top: 1px;
+}
+
+.media-control-btn-icon {
+  height: 30px;
+  width: 30px;
+  background: transparent;
+}
+
+#video-box-2 {
+  height: 80vh;
+}
+
+#create-offer-answer {
+  background-color: rgba(0, 132, 255, 0.873);
+  padding: 20px;
+  border-radius: 30px;
+  color: #fafbfc;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+#submit-offer-answer {
+  background-color: rgba(255, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 30px;
+  color: #fafbfc;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+#create-offer-answer:hover {
+  background-color: rgba(0, 132, 255, 0.952);
+}
+
+.video-element-container {
+  position: relative;
+  padding: 0px;
+  border-radius: 3%;
+  width: inherit;
+}
+
+.video-element-container-label {
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: medium;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.video-element-container-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+
+.hide {
+  display: none;
+}
+
+.unhide{
+  display: flex;
+}
+
+.sample {
+  width: 400px;
+  height: 400px;
+    border-radius: 3%;
+   
+
+}
+
+.sample-video-container{
+  position: relative;
+  padding: 0px;
+  border-radius: 3%;
+  width: 400px;
+  height: 300px;
+}
+
+.video-sample-container {
+  border-radius: 3%;
+  object-fit: contain;
+  width: 400px;
+  height: 400px;
+  padding: 0;
+}
